@@ -1,0 +1,19 @@
+{{#each productos}}
+
+<div class="fila">
+    <!-- Primer Servicio -->
+    <div class="columna">
+        <div class="galeria">
+            <a href="/productos/desc/{{id}}" title="descripcion" role="button">
+                <img aria-hidden="true" src="/img/{{imagen}}" class="img-thumbnail" alt="...">
+            
+            <div class="precio">
+                <p> # {{id}}</p>
+                <p> titulo: {{nombre}}</p>
+                <p>${{precio}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

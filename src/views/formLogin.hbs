@@ -1,0 +1,32 @@
+<div class="container">
+
+    <div class="card" style="margin-top: 80px;">
+        <div class="card-body">
+            <form method="post" action="/signup/{{id}}" class="form-signin">
+                <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+                        <img class="mb-4 rounded mx-auto d-block" src="/imagenes/candado.png" alt="" width="300" height="200">
+                        <h4 class="h3 mb-3 font-weight-normal">Ingresar</h4>
+                        <label for="username" class="sr-only">Username</label>
+                        <input type="text" name="username" id="username" class="form-control" placeholder="Username"
+                         required autofocus>
+                        <br>
+                        <label for="password" class="sr-only">Password</label>
+                        <input type="password" name="password" id="password" class="form-control"
+                        placeholder="Password" required> <br>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+                        <p class="text-primary" style="font-size: small;">¿Todavia no estas registrado?
+                            <a href="/registro">Registrate</a>
+                        </p>
+                        <div class="col-md-4">
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

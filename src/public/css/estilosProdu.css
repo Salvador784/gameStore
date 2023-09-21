@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bannerProdu img{
+    width: 100%;
+    margin: auto;
+    padding: .5% 1%;
+}
+.bannerDev img{
+    max-width: 100%;
+    width: 100%;
+    max-height: 400px;
+    width: 100%;
+    margin: auto;
+    padding: 1% 1%;
+}
+
+.imagen{
+    max-width: 100%;
+    margin: 3%;
+    padding: 2% 1%;
+    background-color: rgba(255, 255, 255, 0.32);
+    float: left;
+}
+
+.nombre_game{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    margin-top: .2%;
+}
+
+.nombre_game h2{
+    max-width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.info_product{
+    width: 100%;
+    background-color: rgb(0, 128, 255);
+    padding: 4%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.5vw;
+    background-size: cover;
+}
+
+.precio_pro h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    font-size: 2.5vw;
+    margin: 1% 0%;
+    text-align: center;
+}
+
+.descripcion{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    margin: auto;
+}
+
+.titulo h4{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 2% 0%;
+}
+
+.texto p{
+    width: 100%;
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+.titulo_info{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 2% 0%;
+}
+
+.texto_adi p{
+    width: 100%;
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+.relacionados{
+    max-width: 100%;
+    margin-top: 7%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5vw;
+    text-align: center;
+    color: rgb(83, 152, 255);
+}
+
+.tablaRela{
+    max-width: 100%;
+    margin-top: 4%;
+}
+
+.columna_rela{
+    width: 33.33%;
+    float: left;
+    padding: 3%;
+    margin: auto;
+}
+
+.galeria_rela{
+    max-width: 100%;
+    padding: 5%;
+    background-color: rgb(83, 152, 255);
+    border-radius: 25px;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.galeria_rela img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.galeria_rela:hover{
+    background-color: rgb(255, 0, 0);
+    color: black;
+    transform: scale(1.01);
+    transition: .3s;
+    background-size: cover;
+}
+
+input[type="submit"]{
+    padding: 1px ;
+    border: 1px solid ;
+    background: rgb(55, 44, 255);
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: purple;
+    transition: .5s;
+}
+#xbox{
+    height: 400px;
+    width: 100%;
+}

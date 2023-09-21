@@ -1,0 +1,25 @@
+{{!-- {{#each productos}} --}}
+<link rel="stylesheet" href="/css/estilosProdu.css">
+<div class="nombre_game">
+    <hr>
+    <h2>{{producto.nombre}}</h2>
+    <hr>
+</div>
+
+<div class="imagen">
+    <img src="/./img/{{producto.imagen}}" alt="...">
+</div>
+
+<div class="info_product">
+    <div class="precio_pro">
+        <h3>{{producto.precio}}</h3>
+    </div>
+
+    <div class="descripcion">
+        <div class="titulo">
+            <h4>Descripción</h4>
+        </div>
+        <div class="texto">
+            <p>{{producto.descripcion}}</p>
+        </div>
+        {{!-- {{/each}} --}}

@@ -1,0 +1,38 @@
+<div class="card">
+        <h4 class="card-header">
+            <strong>Lista de categorias</strong>
+        </h4>
+        <div class="card-body">
+            <a href="/categorias/add" class="btn btn-primary" role="button">
+                <i class="tas ta-file" aria-hidden="true"></i>
+                Nueva
+            </a>
+            <hr>
+            <table class="table">
+                <thead>
+                    <br>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Descripciom</th>
+                    <th scope="col">Operaciones
+                    </th>
+                </thead>
+                <tbody>
+                    {{!-- AGREGAR --}}
+                    {{#each categorias}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{nombre}}</td>
+                        <td>{{descripcion}}</td>
+                        <td> <a href="" class="btn btn-success btn-sm" role="button" title="editar">
+                            <i class="tas ta-trash" aria-hidden="true">Editar</i>
+                        </a>
+                        <a href="/categorias/eliminar/{{id}}" class="btn btn-danger btn-sm" role="button" title="eliminar" style="background-color: brown;">
+                            <i class="tas ta-trash" aria-hidden="true">Eliminar</i>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+      </div>

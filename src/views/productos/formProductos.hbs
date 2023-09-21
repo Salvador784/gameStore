@@ -1,0 +1,58 @@
+<div class="container" style="margin-top:40px;">
+    <div class="card" style="width: 800px; margin:0px auto">
+            <h4 class="card-header"><strong>Datos de Preguntas</strong></h4>
+            <div class="card-budy">
+        <form method="post" action="/productos/add/">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" autofocus class="form-control" name="nombre" id="nombre" placeholder="Escriba el Nombre" required="required">
+                            </div>
+                        </div>
+                    </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="descripcion">descripcion</label>
+                        <input class="form-control" autofocus placeholder="Describe brevemente el producto" name="descripcion" id="descripcion" rows="2"></input>
+                    </div>
+                </div>
+            </div>
+             
+             <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="my-input">Imagen</label>
+                        <input class="form-control-file" type="file" name="imagen" id="imagen" rows="2"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="precio">precio</label>
+                        <input class="form-control" name="precio" placeholder="$400.." id="precio" rows="2"></input>
+                    </div>
+                </div>
+            </div>
+             <div class="row">
+               <div class="col-md-6">
+                <div class="form-group">
+                    <label for="idcategoria">Categoria</label>
+                    <select class="form-control" name="idcategoria" id="idcategoria" rows="2"> 
+                        <option value="">Seleccione ...</option>
+                        {{#each categorias}}
+                        <option value="{{id}}">{{ nombre }}</option>
+                        {{/each}}
+                    </select>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <button type="submit" title="Guardar Categoria" class="btn btn-primary">Guardar</button>
+          </form>
+          </div>
+       </div>     
+    </div>
+</div>
